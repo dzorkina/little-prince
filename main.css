@@ -118,6 +118,10 @@
     box-shadow: 0 0 0.938rem #f8f0d9;
   }
 
+  .custom-player button img {
+    margin-top: 0.2rem; 
+  }
+
 
 /* Header section */
   
@@ -843,6 +847,10 @@ audio {
   background-color: #b845d8;
   transform: scale(1.05);
   box-shadow: 0 0 0.938rem #f8f0d9;
+}
+
+.exploringcustom-player button img {
+    margin-top: 0.2rem; 
 }
 
 @media (max-width: 1500px) {
@@ -2096,7 +2104,7 @@ header p {
 /*Exploring page*/
 
 .exploringcustom-player button {
-  font-size: 0.6rem;
+  font-size: 0.3rem;
   padding: 0.5rem 0.8rem;
   margin: 0.05rem;
   }
