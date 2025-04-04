@@ -801,7 +801,7 @@ header p {
   padding: 0.8rem 1.3rem;
   border-radius: 0.938rem;
   font-size: 0.8rem;
-  font-family: "Klee One", cursive;
+  font-family: "Klee One", cursive !important;
   text-align: center;
   white-space: pre-line;
   backdrop-filter: blur(4px);
@@ -2117,6 +2117,7 @@ header p {
   .planet {
     width: 10rem;
   }
+
   .planet-label, .planet-title, .planet-subtitle {
     font-family: "Just Me Again Down Here";
   }
@@ -2126,6 +2127,7 @@ header p {
   }
   
   .planet-bubble {
+    font-family: "Klee One", cursive;
     font-size: 0.4rem;
     padding: 0.3rem 1rem;
   }
