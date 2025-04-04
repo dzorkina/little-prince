@@ -5,7 +5,7 @@
   }
   
   body {
-    font-family: "Klee One", cursive;
+    font-family: "Klee One", cursive !important;
     background: linear-gradient(0deg, #9A499D 2.33%, #9930B0 24.76%, #9639B3 52.1%, #623B8B 75.06%, #380D54 100%);
     color: #F8F0D9;
     display: flex;
