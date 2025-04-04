@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Little Prince</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Klee+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <audio id="player" autoplay loop>
+    <source src="Music/videoplayback.mp3" type="audio/mpeg">
+  </audio>
+  
+  <div class="custom-player">
+    <button onclick="document.getElementById('player').play()">▶</button>
+    <button onclick="document.getElementById('player').pause()">⏸</button>
+  </div>
+
+  <div class="language-switch">
+    <a href="index.html">EN</a> | <a href="index-ru.html">RU</a>
+  </div>
+  
+    <div class="stars-background"></div>
+
+    <div class="shooting-stars"></div>
+
+
+    <header>
+      <h1>The Little Prince</h1>
+      <p>Antoine de Saint-Exupéry</p> 
+    </header>
+
+    
+    <section class="images-container">
+      <img src="Images/pngtree-engraving-style-sketch-moon-black-and-white-png-image_6650661.png" alt="Rotating Moon" class="rotating-moon">
+    </section>
+
+    <section class="images-container">
+      <img src="Images/8523.png" alt="little-prince" class="image-item">
+    </section>
+
+    <section class="content">
+      <div class="video-container">
+        <video class="netflix-video" controls>
+          <source src="Video/videoplayback.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+     
+      <nav class="menu">
+        <h2>The Little Prince</h2>
+        <ul>
+          <li><a href="meeting.html"target="_blank">The Meeting</a></li>
+          <li><a href="planet.html"target="_blank">The Prince's Planet</a></li>
+          <li><a href="journey.html"target="_blank">The Journey Across Planets</a></li>
+          <li><a href="earth.html"target="_blank">Arrival on Earth</a></li>
+          <li><a href="fox.html"target="_blank">The Fox's Lesson</a></li>
+          <li><a href="meaning.html"target="_blank">The Search for Meaning</a></li>
+          <li><a href="farewell.html"target="_blank">The Farewell</a></li>
+        </ul>
+      </nav>
+    </section>
+  </div>
+
+
+  <footer class="footer">
+    
+    <div class="footer-container">
+        <div class="footer-left">
+            <h2>The Little Prince</h2>
+            <p class="contact-title">Contact</p>
+            <a class="email-link" href="mailto:daria.zork@gmail.com">Click here to contact the creator!</a>
+        </div>
+
+        <div class="footer-center">
+            <div class="footer-links">
+             
+                <ul>
+                  <li><a href="about.html">About the Story</a></li>
+                  <li><a href="behind.html">Behind the Design</a></li>
+                  <li><a href="exploring.html">Exploring the Planets</a></li>
+                </ul>
+            </div>     
+        </div>
+    </div>
+
+    <p class="footer-credits">
+      This is a personal, non-commercial tribute site inspired by <em>The Little Prince</em> by Antoine de Saint-Exupéry. All rights to the original work are owned by their respective holders.
+    </p>
+    <p class="footer-credits">Created by Daria Zork. 2025</p>
+    
+</footer>
+
+<div class="sleepy-fox" onclick="showRandomQuote()">
+  <img src="Images/fox.png" alt="Sleepy Fox">
+  <div class="fox-bubble" id="foxQuote">
+    You become responsible, forever, for what you have tamed.
+  </div>
+</div>
+
+<script src="fox-quotes.js"></script>
+
+</body>
+</html>
+

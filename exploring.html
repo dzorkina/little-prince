@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exploring the Planets</title>
+  <link rel="stylesheet" href="main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+  <div class="language-switch">
+    <a href="exploring.html">EN</a> | <a href="exploring-ru.html">RU</a>
+  </div>
+
+    <audio id="playerexploring" autoplay loop>
+        <source src="Music/Finding the Rose.mp3" type="audio/mpeg">
+      </audio>
+      
+      <div class="exploringcustom-player">
+        <button onclick="document.getElementById('playerexploring').play()">▶</button>
+        <button onclick="document.getElementById('playerexploring').pause()">⏸</button>
+      </div>
+      
+  <div class="stars-background"></div>
+  <div class="shooting-stars"></div>
+
+  <header class="exploring-header">
+    <h1 class="chapter-title exploring-title">Exploring the Planets</h1>
+    <p>Click to uncover hidden messages</p>
+  </header>
+
+  <section class="constellation-planets">
+
+  <div class="planet planet-business" onclick="showPlanetBubble('business')">
+    <img src="Images/bank.png" alt="The Businessman">
+    <div class="planet-label">
+      <p class="planet-title">The Businessman</p>
+      <p class="planet-subtitle">Planet of Numbers</p>
+    </div>
+    <div class="planet-bubble" id="bubble-business"></div>
+  </div>
+
+  
+ 
+  <div class="planet planet-geo" onclick="showPlanetBubble('geo')">
+    <img src="Images/geo.png" alt="The Geographer">
+    <div class="planet-label">
+      <p class="planet-title">The Geographer</p>
+      <p class="planet-subtitle">Planet of Maps</p>
+    </div>
+    <div class="planet-bubble" id="bubble-geo"></div>
+  </div>
+
+  
+
+  <div class="planet planet-lamp" onclick="showPlanetBubble('lamp')">
+    <img src="Images/lamp.png" alt="The Lamplighter">
+    <div class="planet-label">
+      <p class="planet-title">The Lamplighter</p>
+      <p class="planet-subtitle">Planet of Light</p>
+    </div>
+    <div class="planet-bubble" id="bubble-lamp"></div>
+  </div>
+
+  
+
+  <div class="planet planet-king" onclick="showPlanetBubble('king')">
+    <img src="Images/king.png" alt="The King">
+    <div class="planet-label">
+      <p class="planet-title">The King</p>
+      <p class="planet-subtitle">Planet of Power</p>
+    </div>
+    <div class="planet-bubble" id="bubble-king"></div>
+  </div>
+
+  
+
+  <div class="planet planet-vain" onclick="showPlanetBubble('vain')">
+    <img src="Images/mirror.png" alt="The Vain Man">
+    <div class="planet-label">
+      <p class="planet-title">The Vain Man</p>
+      <p class="planet-subtitle">Planet of Applause</p>
+    </div>
+    <div class="planet-bubble" id="bubble-vain"></div>
+  </div>
+
+  
+
+  <div class="planet planet-drunk" onclick="showPlanetBubble('drunk')">
+    <img src="Images/trash.png" alt="The Drunkard">
+    <div class="planet-label">
+      <p class="planet-title">The Drunkard</p>
+      <p class="planet-subtitle">Planet of Forgetting</p>
+    </div>
+    <div class="planet-bubble" id="bubble-drunk"></div>
+  </div>
+
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>The Little Prince</h2>
+        <p class="contact-title">Contact</p>
+        <a class="email-link" href="mailto:daria.zork@gmail.com">Click here to contact the creator!</a>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-links">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">About the Story</a></li>
+            <li><a href="behind.html">Behind the Design</a></li>
+            <li><a href="exploring.html">Exploring the Planets</a></li>
+          </ul>
+        </div>     
+      </div>
+    </div>
+
+    <p class="footer-credits">
+      This is a personal, non-commercial tribute site inspired by <em>The Little Prince</em> by Antoine de Saint-Exupéry. All rights to the original work are owned by their respective holders.
+    </p>
+    <p class="footer-credits">Created by Daria Zork. 2025</p>
+    
+  </footer>
+  <script src="planets.js"></script>
+  <script src="fox-quotes.js"></script>
+</body>
+</html>
