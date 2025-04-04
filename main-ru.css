@@ -2160,6 +2160,10 @@ header p {
     .exploring-header p {
       font-size:0.8rem;
     }
+
+    .planet-label, .planet-title, .planet-subtitle {
+      font-family: "Pacifico", cursive;
+    }
     
     .planet {
       width: 10rem;

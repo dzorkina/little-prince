@@ -2109,6 +2109,9 @@ header p {
   .planet {
     width: 10rem;
   }
+  .planet-label, .planet-title, .planet-subtitle {
+    font-family: "Just Me Again Down Here";
+  }
   
   .planet-label {
     font-size: 0.4rem;
