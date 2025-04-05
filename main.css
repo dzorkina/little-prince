@@ -100,8 +100,9 @@
   }
   
   .custom-player button {
+    font-family: "Just Me Again Down Here";
     font-size: 1.875rem;
-    padding: 0.625rem 1.25rem;
+    padding: 0.525rem 1.25rem;
     margin: 0.313rem;
     border: none;
     border-radius: 1.25rem;
@@ -118,7 +119,7 @@
   }
 
   .custom-player button img {
-    margin-top: 0.2rem; 
+    margin-top: 0.23rem; 
   }
 
 
