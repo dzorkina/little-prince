@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon setup -->
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
   <title>The Little Prince</title>
   <link rel="stylesheet" href="main-ru.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Just+Me+Again+Down+Here&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32G4ZY3BYS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-32G4ZY3BYS');
+  </script>
 </head>
 <body>
 
@@ -49,7 +58,6 @@
   </div>
 
   <footer class="chapterfooter">
-  
     <div class="chapterfooter-container">
       <div class="footer-left">
         <h2>The Little Prince</h2>
@@ -61,7 +69,7 @@
           </ul>
         </div>
       </div>
-  
+
       <div class="chapterfooter-center">
         <ul>
           <li><a href="index-ru.html" target="_blank">Главная</a></li>
@@ -75,3 +83,28 @@
         </ul>    
       </div>
     </div>
+
+    <p class="footer-credits">
+      Это личный некоммерческий сайт, вдохновлённый книгой <em>«Маленький принц»</em> Антуана де Сент-Экзюпери. Все права на оригинальное произведение принадлежат их владельцам.
+    </p>
+    <p class="footer-credits">Создано Дарьей Зорк. 2025</p>
+  </footer>
+
+  <!-- Link tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', function () {
+          const label = link.textContent.trim();
+          gtag('event', 'click', {
+            event_category: 'link',
+            event_label: label
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

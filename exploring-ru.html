@@ -4,133 +4,154 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon setup -->
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
   <title>The Little Prince</title>
   <link rel="stylesheet" href="main-ru.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Just+Me+Again+Down+Here&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32G4ZY3BYS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-32G4ZY3BYS');
+  </script>
 </head>
 <body>
 
-    <div class="language-switch">
-        <a href="exploring.html">Анг</a> | <a href="exploring-ru.html">Рус</a>
+  <div class="language-switch">
+    <a href="exploring.html">Анг</a> | <a href="exploring-ru.html">Рус</a>
+  </div>
+
+  <audio id="playerexploring" autoplay loop>
+    <source src="Music/Finding the Rose.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="exploringcustom-player">
+    <button onclick="document.getElementById('playerexploring').play()">
+      <img src="Images/play.png" alt="play" />
+    </button>
+    <button onclick="document.getElementById('playerexploring').pause()">
+      <img src="Images/pause.png" alt="pause" />
+    </button>
+  </div>
+
+  <div class="stars-background"></div>
+  <div class="shooting-stars"></div>
+
+  <header class="exploring-header">
+    <h1 class="chapter-title exploring-title">Исследование Планет</h1>
+    <p>Нажмите, чтобы раскрыть скрытые сообщения</p>
+  </header>
+
+  <section class="constellation-planets">
+
+    <div class="planet planet-business" onclick="showPlanetBubble('business')">
+      <img src="Images/bank.png" alt="Бизнесмен">
+      <div class="planet-label">
+        <p class="planet-title">Планета Бизнесмена</p>
+        <p class="planet-subtitle">Астероид 328</p>
+      </div>
+      <div class="planet-bubble" id="bubble-business"></div>
+    </div>
+
+    <div class="planet planet-geo" onclick="showPlanetBubble('geo')">
+      <img src="Images/geo.png" alt="Географ">
+      <div class="planet-label">
+        <p class="planet-title">Планета Географа</p>
+        <p class="planet-subtitle">Астероид 330</p>
+      </div>
+      <div class="planet-bubble" id="bubble-geo"></div>
+    </div>
+
+    <div class="planet planet-lamp" onclick="showPlanetBubble('lamp')">
+      <img src="Images/lamp.png" alt="Фонарщик">
+      <div class="planet-label">
+        <p class="planet-title">Планета Фонарщика</p>
+        <p class="planet-subtitle">Астероид 329</p>
+      </div>
+      <div class="planet-bubble" id="bubble-lamp"></div>
+    </div>
+
+    <div class="planet planet-king" onclick="showPlanetBubble('king')">
+      <img src="Images/king.png" alt="Король">
+      <div class="planet-label">
+        <p class="planet-title">Планета Короля</p>
+        <p class="planet-subtitle">Астероид 325</p>
+      </div>
+      <div class="planet-bubble" id="bubble-king"></div>
+    </div>
+
+    <div class="planet planet-vain" onclick="showPlanetBubble('vain')">
+      <img src="Images/mirror.png" alt="Тщеславный Человек">
+      <div class="planet-label">
+        <p class="planet-title">Планета Честолюбца</p>
+        <p class="planet-subtitle">Астероид 326</p>
+      </div>
+      <div class="planet-bubble" id="bubble-vain"></div>
+    </div>
+
+    <div class="planet planet-drunk" onclick="showPlanetBubble('drunk')">
+      <img src="Images/trash.png" alt="Пьяница">
+      <div class="planet-label">
+        <p class="planet-title">Планета Пьяницы</p>
+        <p class="planet-subtitle">Астероид 327</p>
+      </div>
+      <div class="planet-bubble" id="bubble-drunk"></div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h2>The Little Prince</h2>
+        <p class="contact-title">Контакты</p>
+        <a class="email-link" href="mailto:daria.zork@gmail.com">Нажмите здесь, чтобы связаться с создателем!</a>
       </div>
 
-      <audio id="playerexploring" autoplay loop>
-        <source src="Music/Finding the Rose.mp3" type="audio/mpeg">
-      </audio>
-      
-      <div class="exploringcustom-player">
-        <button onclick="document.getElementById('playerexploring').play()">
-          <img src="Images/play.png" alt="play" />
-        </button>
-        <button onclick="document.getElementById('playerexploring').pause()">
-          <img src="Images/pause.png" alt="pause" />
-        </button>
+      <div class="footer-center">
+        <div class="footer-links">
+          <ul>
+            <li><a href="index-ru.html">Главная</a></li>
+            <li><a href="about-ru.html">Об Истории</a></li>
+            <li><a href="behind-ru.html">О Дизайне</a></li>
+            <li><a href="exploring-ru.html">Исследование Планет</a></li>
+          </ul>
+        </div>     
       </div>
-      
-      
-        <div class="stars-background"></div>
-        <div class="shooting-stars"></div>
+    </div>
 
-        <header class="exploring-header">
-            <h1 class="chapter-title exploring-title">Исследование Планет</h1>
-            <p>Нажмите, чтобы раскрыть скрытые сообщения</p>
-          </header>
-          
-          <section class="constellation-planets">
-          
-            <div class="planet planet-business" onclick="showPlanetBubble('business')">
-              <img src="Images/bank.png" alt="Бизнесмен">
-              <div class="planet-label">
-                <p class="planet-title">Планета Бизнесмена</p>
-                <p class="planet-subtitle">Астероид 328</p>
-              </div>
-              <div class="planet-bubble" id="bubble-business"></div>
-            </div>
-          
-            <div class="planet planet-geo" onclick="showPlanetBubble('geo')">
-              <img src="Images/geo.png" alt="Географ">
-              <div class="planet-label">
-                <p class="planet-title">Планета Географа</p>
-                <p class="planet-subtitle">Астероид 330</p>
-              </div>
-              <div class="planet-bubble" id="bubble-geo"></div>
-            </div>
-          
-            <div class="planet planet-lamp" onclick="showPlanetBubble('lamp')">
-              <img src="Images/lamp.png" alt="Фонарщик">
-              <div class="planet-label">
-                <p class="planet-title">Планета Фонарщика</p>
-                <p class="planet-subtitle">Астероид 329</p>
-              </div>
-              <div class="planet-bubble" id="bubble-lamp"></div>
-            </div>
-          
-            <div class="planet planet-king" onclick="showPlanetBubble('king')">
-              <img src="Images/king.png" alt="Король">
-              <div class="planet-label">
-                <p class="planet-title">Планета Короля</p>
-                <p class="planet-subtitle">Астероид 325</p>
-              </div>
-              <div class="planet-bubble" id="bubble-king"></div>
-            </div>
-          
-            <div class="planet planet-vain" onclick="showPlanetBubble('vain')">
-              <img src="Images/mirror.png" alt="Тщеславный Человек">
-              <div class="planet-label">
-                <p class="planet-title">Планета Честолюбца</p>
-                <p class="planet-subtitle">Астероид 326</p>
-              </div>
-              <div class="planet-bubble" id="bubble-vain"></div>
-            </div>
-          
-            <div class="planet planet-drunk" onclick="showPlanetBubble('drunk')">
-              <img src="Images/trash.png" alt="Пьяница">
-              <div class="planet-label">
-                <p class="planet-title">Планета Пьяницы</p>
-                <p class="planet-subtitle">Астероид 327</p>
-              </div>
-              <div class="planet-bubble" id="bubble-drunk"></div>
-            </div>
-          
-          </section>
-          
+    <p class="footer-credits">
+      Это личный некоммерческий сайт, вдохновлённый книгой <em>«Маленький принц»</em> Антуана де Сент-Экзюпери. Все права на оригинальное произведение принадлежат их владельцам.
+    </p>
+    <p class="footer-credits">Создано Дарьей Зорк. 2025</p>
+  </footer>
 
-        <footer class="footer">
-    
-            <div class="footer-container">
-                <div class="footer-left">
-                    <h2>The Little Prince</h2>
-                    <p class="contact-title">Контакты</p>
-                    <a class="email-link" href="mailto:daria.zork@gmail.com">Нажмите здесь, чтобы связаться с создателем!</a>
-                </div>
-        
-                <div class="footer-center">
-                    <div class="footer-links">
-                     
-                        <ul>
-                            <li><a href="index-ru.html">Главная</a></li>
-                            <li><a href="about-ru.html">Об Истории</a></li>
-                            <li><a href="behind-ru.html">О Дизайне</a></li>
-                            <li><a href="exploring-ru.html">Исследование Планет</a></li>
-                          </ul>                  
-                    </div>     
-                </div>
-            </div>
-        
-            <p class="footer-credits">
-                Это личный некоммерческий сайт, вдохновлённый книгой <em>«Маленький принц»</em> Антуана де Сент-Экзюпери. Все права на оригинальное произведение принадлежат их владельцам.
-              </p>
-              <p class="footer-credits">Создано Дарьей Зорк. 2025</p>      
-            
-        </footer>
-            <script src="ru-planets.js"></script>
-            <script src="fox-quotes.js"></script>
-        </body>
-        </html>
+  <script src="ru-planets.js"></script>
+  <script src="fox-quotes.js"></script>
+
+  <!-- Слежение за кликами по ссылкам -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', function () {
+          const label = link.textContent.trim();
+          gtag('event', 'click', {
+            event_category: 'link',
+            event_label: label
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>

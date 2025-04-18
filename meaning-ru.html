@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Favicon setup -->
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="shortcut icon" href="favicon.ico" />
   <title>The Little Prince</title>
-  <link rel="stylesheet" href="main-ru.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Just+Me+Again+Down+Here&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main-ru.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Just+Me+Again+Down+Here&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32G4ZY3BYS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-32G4ZY3BYS');
+  </script>
 </head>
 <body>
 
@@ -27,7 +36,7 @@
     <h1 class="chapter-title meaning-title">Поиск Смысла</h1>
     <p class="chapter-subtitle">Главы 23–25</p>
   </header>
-  
+
   <main class="chapter-content">
     <p>
       После расставания с Лисом Маленький Принц продолжает свой путь. В поисках смысла он встречает стрелочника, который рассказывает, как взрослые без конца спешат с места на место — и при этом редко знают, что именно ищут.
@@ -42,15 +51,13 @@
       В конце концов Принц и рассказчик — пилот — сближаются, пока ищут колодец в пустыне. Когда они его находят, это оказывается не просто вода, а нечто духовное: дар обновления, надежды и тихой радости. Пустыня показала им, что главное часто невидимо.
     </p>
   </main>
-  
+
   <div class="chapter-nav">
     <a href="fox-ru.html">&#8592; Назад: Секрет Лиса</a>
     <a href="farewell-ru.html">Далее: Прощание &#8594;</a>
   </div>
-  
 
   <footer class="chapterfooter">
-  
     <div class="chapterfooter-container">
       <div class="footer-left">
         <h2>The Little Prince</h2>
@@ -62,7 +69,7 @@
           </ul>
         </div>
       </div>
-  
+
       <div class="chapterfooter-center">
         <ul>
           <li><a href="index-ru.html" target="_blank">Главная</a></li>
@@ -76,3 +83,28 @@
         </ul>    
       </div>
     </div>
+
+    <p class="footer-credits">
+      Это личный некоммерческий сайт, вдохновлённый книгой <em>«Маленький принц»</em> Антуана де Сент-Экзюпери. Все права на оригинальное произведение принадлежат их владельцам.
+    </p>
+    <p class="footer-credits">Создано Дарьей Зорк. 2025</p> 
+  </footer>
+
+  <!-- Google Analytics Link Click Tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', function () {
+          const label = link.textContent.trim();
+          gtag('event', 'click', {
+            event_category: 'link',
+            event_label: label
+          });
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

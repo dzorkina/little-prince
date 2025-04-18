@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Favicon setup -->
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="shortcut icon" href="favicon.ico" />
   <title>The Little Prince</title>
-  <link rel="stylesheet" href="main-ru.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Just+Me+Again+Down+Here&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
-  
+  <link rel="stylesheet" href="main-ru.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Just+Me+Again+Down+Here&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32G4ZY3BYS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-32G4ZY3BYS');
+  </script>
 </head>
 
 <body>
   <audio id="player" autoplay loop>
-    <source src="Music/videoplayback.mp3" type="audio/mpeg">
+    <source src="Music/videoplayback.mp3" type="audio/mpeg" />
   </audio>
-  
+
   <div class="custom-player">
     <button onclick="document.getElementById('player').play()">
       <img src="Images/play.png" alt="play" />
@@ -30,92 +38,97 @@
       <img src="Images/pause.png" alt="pause" />
     </button>
   </div>
-  
 
   <div class="language-switch">
     <a href="index.html">Анг</a> | <a href="index-ru.html">Рус</a>
   </div>
-  
-    <div class="stars-background"></div>
 
-    <div class="shooting-stars"></div>
+  <div class="stars-background"></div>
+  <div class="shooting-stars"></div>
 
+  <header>
+    <h1>Маленький принц</h1>
+    <p>Антуан де Сент-Экзюпери</p>
+  </header>
 
-    <header>
-        <h1>Маленький принц</h1>
-        <p>Антуан де Сент-Экзюпери</p> 
-    </header>
+  <section class="images-container">
+    <img src="Images/pngtree-engraving-style-sketch-moon-black-and-white-png-image_6650661.png" alt="Rotating Moon" class="rotating-moon" />
+  </section>
 
-    
-    <section class="images-container">
-      <img src="Images/pngtree-engraving-style-sketch-moon-black-and-white-png-image_6650661.png" alt="Rotating Moon" class="rotating-moon">
-    </section>
+  <section class="images-container">
+    <img src="Images/8523.png" alt="little-prince" class="image-item" />
+  </section>
 
-    <section class="images-container">
-      <img src="Images/8523.png" alt="little-prince" class="image-item">
-    </section>
+  <section class="content">
+    <div class="video-container">
+      <video class="netflix-video" controls>
+        <source src="Video/ruvideoplayback.mp4" type="video/mp4" />
+        Ваш браузер не поддерживает это видео.
+      </video>
+    </div>
 
-    <section class="content">
-      <div class="video-container">
-        <video class="netflix-video" controls>
-          <source src="Video/ruvideoplayback.mp4" type="video/mp4">
-          Ваш браузер не поддерживает это видео.
-        </video>
-      </div>
-
-     
-      <nav class="menu">
-        <h2>Маленький принц</h2>
-        <ul>
-            <li><a href="meeting-ru.html">Встреча</a></li>
-            <li><a href="planet-ru.html">Планета Принца</a></li>
-            <li><a href="journey-ru.html">Путешествие по планетам</a></li>
-            <li><a href="earth-ru.html">Прибытие на Землю</a></li>
-            <li><a href="fox-ru.html">Секрет Лиса</a></li>
-            <li><a href="meaning-ru.html">Поиск смысла</a></li>
-            <li><a href="farewell-ru.html">Прощание</a></li>
-          </ul>          
-      </nav>
-    </section>
-  </div>
-
+    <nav class="menu">
+      <h2>Маленький принц</h2>
+      <ul>
+        <li><a href="meeting-ru.html">Встреча</a></li>
+        <li><a href="planet-ru.html">Планета Принца</a></li>
+        <li><a href="journey-ru.html">Путешествие по планетам</a></li>
+        <li><a href="earth-ru.html">Прибытие на Землю</a></li>
+        <li><a href="fox-ru.html">Секрет Лиса</a></li>
+        <li><a href="meaning-ru.html">Поиск смысла</a></li>
+        <li><a href="farewell-ru.html">Прощание</a></li>
+      </ul>
+    </nav>
+  </section>
 
   <footer class="footer">
-    
     <div class="footer-container">
-        <div class="footer-left">
-            <h2>The Little Prince</h2>
-            <p class="contact-title">Контакты</p>
-            <a class="email-link" href="mailto:daria.zork@gmail.com">Нажмите здесь, чтобы связаться с создателем!</a>
-        </div>
+      <div class="footer-left">
+        <h2>The Little Prince</h2>
+        <p class="contact-title">Контакты</p>
+        <a class="email-link" href="mailto:daria.zork@gmail.com">Нажмите здесь, чтобы связаться с создателем!</a>
+      </div>
 
-        <div class="footer-center">
-            <div class="footer-links">
-             
-                <ul>
-                    <li><a href="about-ru.html">Об Истории</a></li>
-                    <li><a href="behind-ru.html">О Дизайне</a></li>
-                    <li><a href="exploring-ru.html">Исследование Планет</a></li>
-                  </ul>                  
-            </div>     
+      <div class="footer-center">
+        <div class="footer-links">
+          <ul>
+            <li><a href="about-ru.html">Об Истории</a></li>
+            <li><a href="behind-ru.html">О Дизайне</a></li>
+            <li><a href="exploring-ru.html">Исследование Планет</a></li>
+          </ul>
         </div>
+      </div>
     </div>
 
     <p class="footer-credits">
-        Это личный некоммерческий сайт, вдохновлённый книгой <em>«Маленький принц»</em> Антуана де Сент-Экзюпери. Все права на оригинальное произведение принадлежат их владельцам.
-      </p>
-      <p class="footer-credits">Создано Дарьей Зорк. 2025</p>      
-    
-</footer>
+      Это личный некоммерческий сайт, вдохновлённый книгой <em>«Маленький принц»</em> Антуана де Сент-Экзюпери. Все права на оригинальное произведение принадлежат их владельцам.
+    </p>
+    <p class="footer-credits">Создано Дарьей Зорк. 2025</p>
+  </footer>
 
-<div class="sleepy-fox" onclick="showRandomQuote()">
-  <img src="Images/fox.png" alt="Sleepy Fox">
-  <div class="fox-bubble" id="foxQuote">
-    Ты навсегда в ответе за всех, кого приручил.
+  <div class="sleepy-fox" onclick="showRandomQuote()">
+    <img src="Images/fox.png" alt="Sleepy Fox" />
+    <div class="fox-bubble" id="foxQuote">
+      Ты навсегда в ответе за всех, кого приручил.
+    </div>
   </div>
-</div>
 
-<script src="ru-fox-quotes.js"></script>
+  <script src="ru-fox-quotes.js"></script>
 
+  <!-- Google Analytics Link Click Tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', function () {
+          const label = link.textContent.trim();
+          gtag('event', 'click', {
+            event_category: 'link',
+            event_label: label
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>

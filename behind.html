@@ -4,16 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon setup -->
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="shortcut icon" href="favicon.ico">
   <title>The Little Prince</title>
   <link rel="stylesheet" href="main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Klee+One&display=swap" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32G4ZY3BYS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-32G4ZY3BYS');
+  </script>
 </head>
 
 <body>
@@ -31,36 +40,27 @@
 
   <section class="about-me">
     <h1>About Me</h1>
-  
     <div class="about-me-content">
       <div class="about-me-image">
         <img src="Images/me.jpg" alt="Portrait of Daria " class="portrait">
       </div>
-  
       <div class="about-me-text">
         <p>
           Welcome to my creative journey! My name is Daria, and I’m a graphic designer with a passion for storytelling through visuals. 
           <em>The Little Prince</em> has always been a source of inspiration for me—a timeless tale filled with wonder, wisdom, and imagination. 
           When I set out to design this website, I wanted to capture the magic of the book while creating an immersive and visually engaging experience.
         </p>
-        
         <p>See more of my work: <a href="https://www.behance.net/amedesn" target="_blank">Behance</a></p>
         <p>Follow me on: <a href="https://www.instagram.com/ame.desn/" target="_blank">Instagram</a></p>
-
-
       </div>
-      
     </div>
   </section>
-  
-  
   
   <section class="design-process">
     <h1>Design Concept</h1>
     <p>
-        From the soft, dreamy colors to the delicate typography, every detail of this website was chosen to reflect the whimsical world of The Little Prince. I aimed to create a space where visitors can not only explore the story but also feel its emotions—curiosity, nostalgia, and the beauty of seeing the world through a child’s eyes.
+      From the soft, dreamy colors to the delicate typography, every detail of this website was chosen to reflect the whimsical world of The Little Prince. I aimed to create a space where visitors can not only explore the story but also feel its emotions—curiosity, nostalgia, and the beauty of seeing the world through a child’s eyes.
     </p>
-  
     <div class="image-row">
       <img src="Images/Scketch.jpg" alt="Sketching ideas">
       <img src="Images/figma2.png" alt="Design Sketch">
@@ -93,10 +93,26 @@
       This is a personal, non-commercial tribute site inspired by <em>The Little Prince</em> by Antoine de Saint-Exupéry. All rights to the original work are owned by their respective holders.
     </p>
     <p class="footer-credits">Created by Daria Zork. 2025</p>
-    
   </footer>
 
   <script src="fox-quotes.js"></script>
 
+  <!-- Link click tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', function () {
+          const label = link.textContent.trim();
+          gtag('event', 'click', {
+            event_category: 'link',
+            event_label: label
+          });
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>
+

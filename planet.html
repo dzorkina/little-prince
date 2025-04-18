@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- Favicon setup -->
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
-<link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="shortcut icon" href="favicon.ico" />
   <title>The Prince's Planet – The Little Prince</title>
   <link rel="stylesheet" href="main.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Klee+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Just+Me+Again+Down+Here&family=Klee+One&display=swap" rel="stylesheet" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-32G4ZY3BYS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-32G4ZY3BYS');
+  </script>
 </head>
 <body>
 
@@ -45,8 +54,8 @@
     <a href="meeting.html">&#8592; Previous: The Meeting</a>
     <a href="journey.html">Next: The Journey Across Planets &#8594;</a>
   </div>
-  <footer class="chapterfooter">
 
+  <footer class="chapterfooter">
     <div class="chapterfooter-container">
       <div class="footer-left">
         <h2>The Little Prince</h2>
@@ -77,7 +86,23 @@
       This is a personal, non-commercial tribute site inspired by <em>The Little Prince</em> by Antoine de Saint-Exupéry. All rights to the original work are owned by their respective holders.
     </p>
     <p class="footer-credits">Created by Daria Zork. 2025</p>
+  </footer>
 
-</footer>
+  <!-- Google Analytics Click Tracking -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('a');
+      links.forEach(link => {
+        link.addEventListener('click', function () {
+          const label = link.textContent.trim();
+          gtag('event', 'click', {
+            event_category: 'link',
+            event_label: label
+          });
+        });
+      });
+    });
+  </script>
+
 </body>
 </html>
